@@ -2,10 +2,12 @@
 {% block content %}
     {% for post in posts %}
         <br>
-        <div class="card">
+        <div class="card" >
+        <div class="container">
         <h1>{{ post.title }}</h1>
         <p>By {{ post.author }} on {{ date_posted }}</p>
         <p>{{ post.Content }}</p>
+        </div>
         </div>
         <br>
     {% endfor %}
