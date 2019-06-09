@@ -5,7 +5,7 @@
         <div class="card" >
         <div class="container">
         <h1>{{ post.title }}</h1>
-        <p>By {{ post.author }} on {{ date_posted }}</p>
+        <p>By {{ post.author }} on {{ post.date_posted|date:"F, d Y" }}</p>
         <p>{{ post.Content }}</p>
         </div>
         </div>
